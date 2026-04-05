@@ -1,0 +1,29 @@
+/* Glass Sidebar - Frosted glass effect for the sidebar */
+/* Works with any theme */
+
+.workspace-split.mod-left-split {
+  background: rgba(30, 30, 30, 0.6) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.workspace-split.mod-left-split .workspace-tab-header-container {
+  background: transparent !important;
+}
+
+.workspace-split.mod-left-split .nav-folder-title,
+.workspace-split.mod-left-split .nav-file-title {
+  border-radius: 6px;
+  transition: background 0.15s ease;
+}
+
+.workspace-split.mod-left-split .nav-file-title:hover,
+.workspace-split.mod-left-split .nav-folder-title:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.workspace-split.mod-left-split .nav-file-title.is-active {
+  background: rgba(127, 109, 242, 0.2);
+  border-left: 2px solid var(--interactive-accent);
+}
